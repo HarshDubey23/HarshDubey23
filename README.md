@@ -1,7 +1,20 @@
 # Harsh Dubey
 
+<p align="center">
+  <a href="https://iamharshdubey.vercel.app"><img src="https://img.shields.io/badge/Portfolio-iamharshdubey.vercel.app-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/iamharshdubey"><img src="https://img.shields.io/badge/LinkedIn-Harsh%20Dubey-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:harshdubey98190@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
+
 AI/ML and full-stack engineering student building privacy-aware ML systems and
-well-tested web products.
+well-tested web products. Currently pursuing a B.Tech in AI and ML at KIET,
+graduating in 2028.
+
+## What I Build
+
+- Browser-first computer-vision systems where video stays on the device.
+- APIs and web applications with authentication, persistence, and deployment runbooks.
+- Reproducible ML experiments with explicit limitations and defensible metrics.
 
 ## Featured Work
 
@@ -19,10 +32,21 @@ well-tested web products.
 - Prefer small, testable services over claims that are not shipped.
 - Document deployment, limitations, and known gaps clearly.
 
+## Technical Focus
+
+```text
+Languages   Python, TypeScript, JavaScript, SQL
+ML          PyTorch, ONNX, scikit-learn, OpenCV
+Frontend    React, Vite, HTML, CSS
+Backend     FastAPI, Express, Node.js
+Data        SQLite, MongoDB
+Delivery    Docker, GitHub Actions, Vercel, Render
+```
+
 ## Links
 
 - Portfolio: https://iamharshdubey.vercel.app
-- LinkedIn: https://in.linkedin.com/in/iamharshdubey
+- LinkedIn: https://www.linkedin.com/in/iamharshdubey
 - Email: harshdubey98190@gmail.com
 
 Open to ML Engineering, AI Engineering, and Full-Stack Engineering internships.
