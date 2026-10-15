@@ -25,13 +25,10 @@ team contribution to [Browser-s-Agent](https://github.com/HarshDubey23/Browser-s
 
 ## Use them from your own agent
 
-Both agent projects ship as MCP servers you can add to Claude Desktop, Claude Code or Cursor
-with one line and no clone:
-
-```bash
-claude mcp add sellable -- uvx --from git+https://github.com/HarshDubey23/SELLABLE sellable-mcp
-claude mcp add abhed --env ABHED_AGENT_KEY=kv_live_… -- npx -y github:HarshDubey23/abhed-mcp
-```
+Both agent projects ship as MCP servers that any MCP-compatible agent (Cursor, VS Code,
+Windsurf and others) can use with no clone: SELLABLE runs with
+`uvx --from git+https://github.com/HarshDubey23/SELLABLE sellable-mcp`, and Abhed with
+`npx -y github:HarshDubey23/abhed-mcp`. Config snippets are in each repo's README.
 
 The fraud model is a public REST API: `POST https://fraud-scoring-api.vercel.app/score`
 ([docs](https://fraud-scoring-api.vercel.app/docs)).
