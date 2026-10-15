@@ -7,7 +7,7 @@ I build AI systems where the risky parts are deterministic, and I evaluate them
 the way they'd actually be used. Every number in my repositories is produced by
 committed code, and every project lists its limitations.
 
-**[Portfolio](https://iamharshdubey.vercel.app)** · **[LinkedIn](https://www.linkedin.com/in/iamharshdubey)** · **[Email](mailto:harshdubey98190@gmail.com)**
+**[Portfolio](https://iamharshdubey.vercel.app)** · **[LinkedIn](https://www.linkedin.com/in/harsh-dubey-224b08328)** · **[Email](mailto:harshdubey98190@gmail.com)**
 
 ## Selected work
 
