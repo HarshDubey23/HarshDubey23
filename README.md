@@ -1,10 +1,11 @@
 <!--
   Profile README for github.com/HarshDubey23, in the same design as iamharshdubey.vercel.app.
   Every panel is an animated SVG in ./assets with the type converted to outlines (Bricolage Grotesque, OFL).
+  The hero is a frame rendered from the site's own three.js world.
   Regenerate with: python tools/build3.py
 -->
 
-<a href="https://iamharshdubey.vercel.app"><img src="./assets/hero.svg" width="100%" alt="Harsh Dubey. I build AI agents that can't be talked into the wrong action, and I measure everything I ship. B.Tech AI & ML at KIET, Delhi NCR, open to internships in 2026."></a>
+<a href="https://iamharshdubey.vercel.app"><img src="./assets/hero.svg" width="100%" alt="Harsh Dubey, written in leaves over a river at sunrise: a frame from his site's 3D world. I build AI agents that can't be talked into the wrong action, and I measure everything I ship. B.Tech AI & ML at KIET, Delhi NCR, open to internships in 2026."></a>
 
 <a href="https://iamharshdubey.vercel.app/#gate"><img src="./assets/gate.svg" width="100%" alt="Try to make my agent spend your money: SELLABLE's twelve deterministic rules block a prompt-injected ₹4,499 purchase on a ₹2,000 mission with R1_BUDGET. Money moved: ₹0."></a>
 

@@ -1,5 +1,6 @@
-"""Profile README panels in the portfolio's v3 design: near-black ground, paper ink, one orange
-signal, Bricolage Grotesque converted to outlines. Run: python3 build3.py (writes ./out/*.svg)"""
+"""Profile README panels in the portfolio's v7 design (one day in a meadow): deep forest ground,
+cream ink, marigold and poppy, Bricolage Grotesque converted to outlines. The hero is a frame
+rendered from the site's own 3D world. Run: python3 build3.py (writes ../assets/*.svg)"""
 import pathlib
 import sys
 
@@ -9,8 +10,8 @@ from kit import BLACK, BOLD, MED, MONO, REG, SEMI, fade, jpg, para, rise, svg, t
 
 kit.OUT = pathlib.Path(__file__).parent.parent / "assets"
 kit.OUT.mkdir(exist_ok=True)
-BG, SURF, INK, MUT, SIG = "#0b0b0a", "#161614", "#f1ece2", "#9a958b", "#ff5a1f"
-GREEN = "#9cf0b2"
+BG, SURF, INK, MUT, SIG = "#14201a", "#1e2e25", "#f6efdf", "#b4b09d", "#f4b23e"
+GREEN, POPPY = "#a3d977", "#ec5b32"
 MCP_URL = "https://sellable-mcp.onrender.com/mcp"
 W = 1280
 
@@ -22,41 +23,36 @@ def save(name, data):
 
 # ---------------------------------------------------------------- hero
 def hero():
+    """A frame of the site's world at sunrise (the name made of leaves), with the page's words on it."""
     H = 760
-    b = [f'<rect width="{W}" height="{H}" fill="{BG}"/>']
-    b.append(f'<clipPath id="ha"><rect x="0" y="40" width="{W}" height="300"/></clipPath>')
-    b.append(f'<g clip-path="url(#ha)">{rise(t(BLACK, "HARSH", 350, 30, 312, INK, -0.025), 300, 0.1)}</g>')
-    b.append(f'<clipPath id="hb"><rect x="0" y="470" width="{W}" height="290"/></clipPath>')
-    b.append(f'<g clip-path="url(#hb)">{rise(t(BLACK, "DUBEY", 300, W - 32, H - 30, SIG, -0.025, "end"), 300, 0.3)}</g>')
-    # the twin, drawn flat: wireframe sphere, orange dust, eyes that blink and look, a talking smile
-    cx, cy, r = 1035, 205, 150
-    wire = "".join(f'<ellipse cx="{cx}" cy="{cy}" rx="{r * k:.1f}" ry="{r}" fill="none" stroke="{INK}" stroke-opacity=".14" stroke-width="1.4"/>' for k in (1, .72, .38))
-    wire += "".join(f'<ellipse cx="{cx}" cy="{cy}" rx="{r}" ry="{r * k:.1f}" fill="none" stroke="{INK}" stroke-opacity=".12" stroke-width="1.4"/>' for k in (.7, .36))
-    import math
+    img = jpg("meadow.jpg")
+    b = [f'<rect width="{W}" height="{H}" fill="{BG}"/>',
+         f'<clipPath id="hc"><rect width="{W}" height="{H}" rx="28"/></clipPath>',
+         '<linearGradient id="hs" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="#0c140f" stop-opacity="0"/><stop offset="1" stop-color="#0c140f" stop-opacity=".34"/></linearGradient>',
+         '<radialGradient id="hl" cx=".18" cy=".86" r=".55"><stop offset="0" stop-color="#0c140f" stop-opacity=".55"/><stop offset="1" stop-color="#0c140f" stop-opacity="0"/></radialGradient>',
+         f'<g clip-path="url(#hc)"><image href="{img}" x="0" y="0" width="{W}" height="{H}" preserveAspectRatio="xMidYMid slice">'
+         f'<animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/></image>'
+         f'<rect width="{W}" height="{H}" fill="url(#hs)"/><rect width="{W}" height="{H}" fill="url(#hl)"/>']
+    # sun glitter on the river
     import random
-    random.seed(7)
-    dots = "".join(f'<circle cx="{cx + math.cos(a) * d:.1f}" cy="{cy + math.sin(a) * d:.1f}" r="{random.choice((1.6, 2.2, 2.8))}" fill="{SIG}" opacity="{random.choice((.5, .8, 1))}"/>'
-                   for a, d in ((random.uniform(0, 6.283), random.uniform(r * .9, r * 1.12)) for _ in range(46)))
-    eyes = ""
-    for dx in (-48, 48):
-        ex, ey = cx + dx, cy - 18
-        eyes += (f'<circle cx="{ex}" cy="{ey}" r="25" fill="{INK}"><animate attributeName="r" values="25;25;3;25;25" keyTimes="0;.9;.94;.98;1" dur="5s" repeatCount="indefinite"/></circle>'
-                 f'<circle cx="{ex}" cy="{ey}" r="11" fill="{BG}"><animate attributeName="cx" values="{ex};{ex + 9};{ex + 9};{ex - 10};{ex - 10};{ex}" keyTimes="0;.15;.4;.55;.85;1" dur="7s" repeatCount="indefinite"/>'
-                 f'<animate attributeName="r" values="11;11;0;11;11" keyTimes="0;.9;.94;.98;1" dur="5s" repeatCount="indefinite"/></circle>'
-                 f'<rect x="{ex - 20}" y="{ey - 52}" width="40" height="9" rx="4" fill="{INK}"/>')
-    smile = (f'<path d="M{cx - 34} {cy + 42} Q{cx} {cy + 82} {cx + 34} {cy + 42}" fill="none" stroke="{INK}" stroke-width="13" stroke-linecap="round">'
-             f'<animate attributeName="d" dur="2.6s" repeatCount="indefinite" values="M{cx - 34} {cy + 42} Q{cx} {cy + 82} {cx + 34} {cy + 42};M{cx - 30} {cy + 44} Q{cx} {cy + 96} {cx + 30} {cy + 44};M{cx - 34} {cy + 42} Q{cx} {cy + 76} {cx + 34} {cy + 42};M{cx - 34} {cy + 42} Q{cx} {cy + 82} {cx + 34} {cy + 42}"/></path>')
-    face = f'<g>{wire}{dots}{eyes}{smile}<animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/></g>'
-    b.append(fade(face, 0.5, 1.2, 20))
-    b.append(fade(t(SEMI, "This is my AI twin. On my site it talks.", 18, cx, cy + r + 46, MUT, 0, "middle"), 1.2))
-    b.append(fade(f'<circle cx="44" cy="365" r="6" fill="#5cff9d"/>' + t(SEMI, "B.Tech AI & ML at KIET, Delhi NCR. Open to internships in 2026.", 20, 60, 372, MUT), 0.6))
+    random.seed(11)
+    sp = ""
+    for _ in range(26):
+        x, y, d = random.uniform(560, 860), random.uniform(560, 750), random.uniform(1.6, 3.4)
+        sp += (f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{random.uniform(1.4, 2.6):.1f}" fill="#fff6dc" opacity="0">'
+               f'<animate attributeName="opacity" values="0;.95;0" dur="{d:.1f}s" begin="{random.uniform(0, 3):.1f}s" repeatCount="indefinite"/></circle>')
+    b.append(sp + "</g>")
+    b.append(fade(f'<circle cx="44" cy="380" r="6" fill="{GREEN}"/>' + t(SEMI, "B.Tech AI & ML at KIET, Delhi NCR. Open to internships in 2026.", 20, 60, 387, INK), 0.5))
     lead = ["I build AI agents that can't be", "talked into the wrong action, and", "I measure everything I ship."]
-    b.append(fade("".join(t(MED, ln, 32, 36, 470 + i * 40, INK, -0.01) for i, ln in enumerate(lead)), 0.7))
+    b.append(fade("".join(t(MED, ln, 34, 36, 520 + i * 42, INK, -0.01) for i, ln in enumerate(lead)), 0.7))
     w1 = SEMI.width("Try to break my agent", 20) + 52
-    b.append(fade(f'<rect x="36" y="616" width="{w1:.0f}" height="56" rx="28" fill="{SIG}"/>' + t(SEMI, "Try to break my agent", 20, 62, 651, BG)
-                  + f'<rect x="{48 + w1:.0f}" y="616" width="{SEMI.width("iamharshdubey.vercel.app", 20) + 52:.0f}" height="56" rx="28" fill="{SURF}"/>'
-                  + t(SEMI, "iamharshdubey.vercel.app", 20, 74 + w1, 651, INK), 0.85))
-    return svg(W, H, "".join(b), "Harsh Dubey. I build AI agents that can't be talked into the wrong action, and I measure everything I ship.")
+    b.append(fade(f'<rect x="36" y="654" width="{w1:.0f}" height="56" rx="28" fill="{SIG}"/>' + t(SEMI, "Try to break my agent", 20, 62, 689, BG)
+                  + f'<rect x="{48 + w1:.0f}" y="654" width="{SEMI.width("iamharshdubey.vercel.app", 20) + 52:.0f}" height="56" rx="28" fill="#f6efdf" fill-opacity=".14" stroke="#f6efdf" stroke-opacity=".22"/>'
+                  + t(SEMI, "iamharshdubey.vercel.app", 20, 74 + w1, 689, INK), 0.9))
+    cap = "A frame from my site: one day in a meadow, rendered live in three.js."
+    cw = SEMI.width(cap, 16) + 36
+    b.append(fade(f'<rect x="{W - 28 - cw:.0f}" y="22" width="{cw:.0f}" height="38" rx="19" fill="#0c140f" fill-opacity=".42"/>' + t(SEMI, cap, 16, W - 46, 47, INK, 0, "end"), 1.1))
+    return svg(W, H, "".join(b), "Harsh Dubey, written in leaves over a river at sunrise: a frame from his site. I build AI agents that can't be talked into the wrong action, and I measure everything I ship.")
 
 
 # ---------------------------------------------------------------- the gate
@@ -90,9 +86,9 @@ def gate():
             i = order.index(rid)
             t_on = 0.08 + i * 0.045
             if i < fire:
-                vals, col = f"{SURF};{SURF};#1f2a20;#1f2a20;{SURF}", GREEN
+                vals, col = f"{SURF};{SURF};#2c4a2a;#2c4a2a;{SURF}", GREEN
             elif i == fire:
-                vals, col = f"{BG};{BG};{SIG};{SIG};{BG}", BG
+                vals, col = f"{BG};{BG};{POPPY};{POPPY};{BG}", BG
             else:
                 vals, col = f"{BG};{BG};{BG};{BG};{BG}", MUT
             kt = f"0;{t_on:.3f};{t_on + .01:.3f};.92;1"
@@ -109,7 +105,7 @@ def gate():
         y += 50
     vy = y + 70
     kt_v = f"0;{0.08 + fire * 0.045 + .02:.3f};.92;1"
-    m.append(f'<g opacity="0">{t(BLACK, "BLOCKED: R1_BUDGET", 76, mx + 26, vy, SIG, -0.02)}'
+    m.append(f'<g opacity="0">{t(BLACK, "BLOCKED: R1_BUDGET", 76, mx + 26, vy, POPPY, -0.02)}'
              f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="{kt_v}" dur="{cycle}s" repeatCount="indefinite"/></g>')
     m.append(t(REG, "The gate reads the server-signed mission, not the prose.", 19, mx + 26, vy + 44, MUT))
     m.append(t(REG, "Money moved: ₹0. Every attempt lands in a SHA-256 hash chain.", 19, mx + 26, vy + 74, MUT))

@@ -1,7 +1,7 @@
 # Profile playbook
 
 ## Regenerate the README panels
-Edit the copy in `tools/build.py` and run `python tools/build.py` (needs `fonttools` and the Inter Display fonts).
+Edit the copy in `tools/build3.py` and run `python tools/build3.py` (needs `fonttools`; the Bricolage Grotesque and JetBrains Mono fonts are in `tools/fonts`). The hero is `tools/img/meadow.jpg`, a frame rendered from the portfolio's 3D world.
 The snake refreshes itself twice a day; run **Contribution snake** once from the Actions tab after a colour change.
 
 ## Achievements (7 can still be earned; Arctic Code Vault and Mars 2020 are retired)

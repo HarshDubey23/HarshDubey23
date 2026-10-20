@@ -18,7 +18,7 @@ OUT.mkdir(exist_ok=True)
 IMG = HERE / "img"
 FONTS = HERE / "fonts"
 
-BG, SURF, BAND, INK, MUT, PAPER, SIG = "#0b0b0a", "#161614", "#000000", "#f1ece2", "#9a958b", "#f1ece2", "#ff5a1f"
+BG, SURF, BAND, INK, MUT, PAPER, SIG = "#14201a", "#1e2e25", "#0c140f", "#f6efdf", "#b4b09d", "#f6efdf", "#f4b23e"
 EASE = 'calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1"'
 
 
