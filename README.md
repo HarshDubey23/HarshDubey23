@@ -37,5 +37,5 @@
   <img src="https://raw.githubusercontent.com/HarshDubey23/HarshDubey23/output/snake-light.svg" width="100%" alt="My contribution graph for the last year, eaten by a snake.">
 </picture>
 
-<a href="mailto:harshdubey98190@gmail.com"><img src="./assets/contact.svg" width="100%" alt="Hiring for an ML, AI or full-stack internship? Let's talk: harshdubey98190@gmail.com"></a>
-<p align="right"><a href="https://iamharshdubey.vercel.app">iamharshdubey.vercel.app</a> &nbsp; <a href="https://www.linkedin.com/in/harsh-dubey-224b08328">LinkedIn</a> &nbsp; <a href="mailto:harshdubey98190@gmail.com">Email</a></p>
+<a href="mailto:harshimp123455@gmail.com"><img src="./assets/contact.svg" width="100%" alt="Hiring for an ML, AI or full-stack internship? Let's talk: harshimp123455@gmail.com"></a>
+<p align="right"><a href="https://iamharshdubey.vercel.app">iamharshdubey.vercel.app</a> &nbsp; <a href="https://www.linkedin.com/in/harsh-dubey-224b08328">LinkedIn</a> &nbsp; <a href="mailto:harshimp123455@gmail.com">Email</a></p>

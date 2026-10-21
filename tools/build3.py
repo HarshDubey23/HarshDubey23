@@ -234,7 +234,7 @@ def contact():
         b.append(underline_link(SEMI, label, 20, x, 600, BG, "end"))
         x -= SEMI.width(label, 20) + 30
     b.append(t(MED, "Delhi NCR · open to 2026 internships", 20, 36, 600, BG))
-    return svg(W, H, "".join(b), "Let's talk. harshdubey98190@gmail.com")
+    return svg(W, H, "".join(b), "Let's talk. harshimp123455@gmail.com")
 
 
 if __name__ == "__main__":
