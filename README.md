@@ -1,8 +1,7 @@
 <!--
-  Profile README for github.com/HarshDubey23, in the same design as iamharshdubey.vercel.app.
+  Profile README for github.com/HarshDubey23, aligned with iamharshdubey.vercel.app.
   Every panel is an animated SVG in ./assets with the type converted to outlines (Bricolage Grotesque, OFL).
   The hero is a frame rendered from the site's own three.js world.
-  Regenerate with: python tools/build3.py
 -->
 
 <a href="https://iamharshdubey.vercel.app"><img src="./assets/hero.svg" width="100%" alt="Harsh Dubey, written in leaves over a river at sunrise: a frame from his site's 3D world. I build AI agents that can't be talked into the wrong action, and I measure everything I ship. B.Tech AI & ML at KIET, Delhi NCR, open to internships in 2026."></a>
@@ -12,19 +11,24 @@
 <a href="https://github.com/HarshDubey23/SELLABLE/tree/main/mcp_server"><img src="./assets/mcp.svg" width="100%" alt="SELLABLE is a remote MCP server: plug it into Claude, ChatGPT, Cursor or VS Code in one paste."></a>
 
 <a href="https://github.com/HarshDubey23/SELLABLE"><img src="./assets/work-sellable.svg" width="100%" alt="SELLABLE, 2026, agentic commerce. 0 of 240 attacks moved money. The model proposes a SKU and a quantity; twelve plain rules decide."></a>
-<p align="right"><a href="https://github.com/HarshDubey23/SELLABLE">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/SELLABLE/tree/main/mcp_server">MCP server</a> &nbsp; <a href="https://github.com/HarshDubey23/SELLABLE/tree/main/docs/architecture">Architecture</a></p>
+<p align="right"><a href="https://github.com/HarshDubey23/SELLABLE">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/SELLABLE/tree/main/mcp_server">MCP server</a> &nbsp; <a href="https://github.com/HarshDubey23/SELLABLE/releases/tag/v1.0.0">Release v1.0.0</a> &nbsp; <a href="https://github.com/HarshDubey23/SELLABLE/tree/main/docs/architecture">Architecture</a></p>
 
-<a href="https://github.com/HarshDubey23/hackarena"><img src="./assets/work-abhed.svg" width="100%" alt="Abhed, 2026, AI agent governance. 23 of 26 attacks blocked. One gate for every agent action, a person for the risky ones, a hash-chained signed ledger."></a>
-<p align="right"><a href="https://kavach-os.vercel.app">Live app</a> &nbsp; <a href="https://github.com/HarshDubey23/hackarena">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/abhed-mcp">MCP server</a></p>
+<a href="https://github.com/HarshDubey23/abhed"><img src="./assets/work-abhed.svg" width="100%" alt="Abhed, 2026, AI agent governance. 23 of 26 attacks blocked. One gate for every agent action, a person for the risky ones, a hash-chained signed ledger."></a>
+<p align="right"><a href="https://kavach-os.vercel.app">Live app</a> &nbsp; <a href="https://github.com/HarshDubey23/abhed">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/abhed-mcp">MCP server</a> &nbsp; <a href="https://github.com/HarshDubey23/abhed-mcp/releases/tag/v1.0.0">Release v1.0.0</a></p>
 
 <a href="https://github.com/HarshDubey23/ProctorIQ"><img src="./assets/work-proctoriq.svg" width="100%" alt="ProctorIQ, 2026, on-device ML. Video never leaves the device: a 27 KB model runs in the browser and the server signs the report."></a>
-<p align="right"><a href="https://proctoriq-exam.vercel.app">Live site</a> &nbsp; <a href="https://github.com/HarshDubey23/ProctorIQ">Code</a></p>
+<p align="right"><a href="https://proctoriq-exam.vercel.app">Live site</a> &nbsp; <a href="https://github.com/HarshDubey23/ProctorIQ">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/ProctorIQ/releases/tag/v1.0.0">Release v1.0.0</a></p>
+
+<a href="https://github.com/HarshDubey23/StratIq">
+<p align="left"><b>StratIq</b> &mdash; Market Decision Engine & 10,000-Agent Simulation</p>
+</a>
+<p align="right"><a href="https://strataiq-rho.vercel.app">Live Demo</a> &nbsp; <a href="https://github.com/HarshDubey23/StratIq">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/StratIq#architecture">Architecture</a></p>
 
 <a href="https://github.com/HarshDubey23/Credit-Card-Fraud-Detection"><img src="./assets/work-fraud.svg" width="100%" alt="Fraud detection, 2025. PR-AUC 0.793 on unseen time, from a leakage-safe temporal evaluation."></a>
 <p align="right"><a href="https://fraud-scoring-api.vercel.app/docs">Live API</a> &nbsp; <a href="https://github.com/HarshDubey23/Credit-Card-Fraud-Detection">Code</a></p>
 
 <a href="https://github.com/HarshDubey23/early-failure-detection-cot"><img src="./assets/work-research.svg" width="100%" alt="Choke Points, 2026 research. 3,400 reasoning traces studied to find where LLM reasoning first breaks."></a>
-<p align="right"><a href="https://github.com/HarshDubey23/early-failure-detection-cot">Code</a></p>
+<p align="right"><a href="https://github.com/HarshDubey23/early-failure-detection-cot">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/early-failure-detection-cot#findings">Findings</a></p>
 
 <img src="./assets/numbers.svg" width="100%" alt="Numbers with their caveats: 0 of 240 attacks moved money (three open-weight models, 864 calls); 578 tests; 23 of 26 attacks blocked (no-code gateway let 6 of 21 through); 27 KB model (99.2% on 30 acted clips); PR-AUC 0.793 (not better than logistic regression); 3,400 traces (AUROC 0.588).">
 
