@@ -1,6 +1,6 @@
 """Builds the profile README visuals for github.com/HarshDubey23.
 
-Same design as iamharshdubey.vercel.app: burgundy ground, bubblegum ink, one grotesk,
+Same design as iamharshdubey.onrender.com: burgundy ground, bubblegum ink, one grotesk,
 huge name split across two corners, project plates cut by a band at their midline.
 All type is converted to outlines so GitHub shows exactly this, with no font loading.
 Run: python3 build.py  (writes ./assets/*.svg)

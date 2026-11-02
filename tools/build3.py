@@ -47,8 +47,8 @@ def hero():
     b.append(fade("".join(t(MED, ln, 34, 36, 520 + i * 42, INK, -0.01) for i, ln in enumerate(lead)), 0.7))
     w1 = SEMI.width("Try to break my agent", 20) + 52
     b.append(fade(f'<rect x="36" y="654" width="{w1:.0f}" height="56" rx="28" fill="{SIG}"/>' + t(SEMI, "Try to break my agent", 20, 62, 689, BG)
-                  + f'<rect x="{48 + w1:.0f}" y="654" width="{SEMI.width("iamharshdubey.vercel.app", 20) + 52:.0f}" height="56" rx="28" fill="#f6efdf" fill-opacity=".14" stroke="#f6efdf" stroke-opacity=".22"/>'
-                  + t(SEMI, "iamharshdubey.vercel.app", 20, 74 + w1, 689, INK), 0.9))
+                  + f'<rect x="{48 + w1:.0f}" y="654" width="{SEMI.width("iamharshdubey.onrender.com", 20) + 52:.0f}" height="56" rx="28" fill="#f6efdf" fill-opacity=".14" stroke="#f6efdf" stroke-opacity=".22"/>'
+                  + t(SEMI, "iamharshdubey.onrender.com", 20, 74 + w1, 689, INK), 0.9))
     cap = "A frame from my site: one day in a meadow, rendered live in three.js."
     cw = SEMI.width(cap, 16) + 36
     b.append(fade(f'<rect x="{W - 28 - cw:.0f}" y="22" width="{cw:.0f}" height="38" rx="19" fill="#0c140f" fill-opacity=".42"/>' + t(SEMI, cap, 16, W - 46, 47, INK, 0, "end"), 1.1))
@@ -230,7 +230,7 @@ def contact():
     b.append(f'<clipPath id="lt"><rect x="0" y="100" width="{W}" height="320"/></clipPath><g clip-path="url(#lt)">{rise(t(BLACK, "LET’S TALK", 300, 28, 400, BG, -0.02), 320, .15)}</g>')
     b.append(t(BLACK, "HARSHDUBEY98190@GMAIL.COM", 70, 36, 540, BG, -0.01))
     x = W - 36
-    for label in reversed(["iamharshdubey.vercel.app", "LinkedIn", "GitHub"]):
+    for label in reversed(["iamharshdubey.onrender.com", "LinkedIn", "GitHub"]):
         b.append(underline_link(SEMI, label, 20, x, 600, BG, "end"))
         x -= SEMI.width(label, 20) + 30
     b.append(t(MED, "Delhi NCR · open to 2026 internships", 20, 36, 600, BG))
