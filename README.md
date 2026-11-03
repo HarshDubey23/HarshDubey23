@@ -19,10 +19,8 @@
 <a href="https://github.com/HarshDubey23/ProctorIQ"><img src="./assets/work-proctoriq.svg" width="100%" alt="ProctorIQ, 2026, on-device ML. Video never leaves the device: a 27 KB model runs in the browser and the server signs the report."></a>
 <p align="right"><a href="https://proctoriq-exam.onrender.com">Live site</a> &nbsp; <a href="https://github.com/HarshDubey23/ProctorIQ">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/ProctorIQ/releases/tag/v1.0.0">Release v1.0.0</a></p>
 
-<a href="https://github.com/HarshDubey23/StratIq">
-<p align="left"><b>StratIq</b> &mdash; Market Decision Engine & 10,000-Agent Simulation</p>
-</a>
-<p align="right"><a href="https://strataiq-vbuo.onrender.com">Live Demo</a> &nbsp; <a href="https://github.com/HarshDubey23/StratIq">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/StratIq#architecture">Architecture</a></p>
+<a href="https://github.com/HarshDubey23/StrataIQ"><img src="./assets/work-strataiq.svg" width="100%" alt="StrataIQ, 2026, geospatial simulation. 10,000 synthetic customers, 615 parameters each, on real population density choose between your shop, real competitors and not buying."></a>
+<p align="right"><a href="https://strataiq-vbuo.onrender.com">Live app</a> &nbsp; <a href="https://github.com/HarshDubey23/StrataIQ">Code</a> &nbsp; <a href="https://github.com/HarshDubey23/StrataIQ/blob/main/docs/MODEL.md">Methodology</a> &nbsp; <a href="https://github.com/HarshDubey23/StrataIQ/blob/main/docs/ARCHITECTURE.md">Architecture</a></p>
 
 <a href="https://github.com/HarshDubey23/Credit-Card-Fraud-Detection"><img src="./assets/work-fraud.svg" width="100%" alt="Fraud detection, 2025. PR-AUC 0.793 on unseen time, from a leakage-safe temporal evaluation."></a>
 <p align="right"><a href="https://fraud-scoring-api-jl0v.onrender.com/docs">Live API</a> &nbsp; <a href="https://github.com/HarshDubey23/Credit-Card-Fraud-Detection">Code</a></p>

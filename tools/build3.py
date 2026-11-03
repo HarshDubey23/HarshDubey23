@@ -134,6 +134,8 @@ PROJECTS = [
      "One gate for every action an AI agent takes. Risky ones wait for a person, and every decision lands on a signed, hash-chained ledger. Team of five."),
     ("proctoriq", "PROCTORIQ", "2026 · On-device ML, privacy", "Video never leaves the device", "proctoriq-ui.jpg",
      "Exam-integrity analytics in the browser. A 27 KB model watches; the server only sees events, re-scores them and signs the report."),
+    ("strataiq", "STRATAIQ", "2026 · Geospatial simulation", "10,000 agents, 615 parameters each", "strataiq.jpg",
+     "Test a shop before you sign the lease. Synthetic customers on real population density choose between you, real competitors and not buying."),
     ("fraud", "FRAUD DETECTION", "2025 · ML engineering", "PR-AUC 0.793 on unseen time", "fraud.jpg",
      "I rebuilt a 99.75%-accuracy notebook into an evaluation that would survive deployment, and kept the finding that hurt."),
     ("research", "CHOKE POINTS", "2026 · Research", "3,400 reasoning traces", "research.jpg",
@@ -228,7 +230,7 @@ def contact():
     H = 640
     b = [f'<rect width="{W}" height="{H}" fill="{SIG}"/>', t(SEMI, "Hiring for an ML, AI or full-stack internship?", 28, 36, 80, BG, -0.01)]
     b.append(f'<clipPath id="lt"><rect x="0" y="100" width="{W}" height="320"/></clipPath><g clip-path="url(#lt)">{rise(t(BLACK, "LET’S TALK", 300, 28, 400, BG, -0.02), 320, .15)}</g>')
-    b.append(t(BLACK, "HARSHDUBEY98190@GMAIL.COM", 70, 36, 540, BG, -0.01))
+    b.append(t(BLACK, "HARSHIMP123455@GMAIL.COM", 70, 36, 540, BG, -0.01))
     x = W - 36
     for label in reversed(["iamharshdubey.onrender.com", "LinkedIn", "GitHub"]):
         b.append(underline_link(SEMI, label, 20, x, 600, BG, "end"))
