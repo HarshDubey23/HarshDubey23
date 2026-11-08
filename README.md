@@ -1,6 +1,6 @@
 <!-- Banner: tools/banner.py. Screenshots in assets/shots are taken from the live apps. -->
 
-<a href="https://iamharshdubey.onrender.com"><img src="./assets/banner.svg" width="100%" alt="Harsh Dubey, agentic AI and LLM engineer. I build AI agents that can't be talked into the wrong action: a policy gate blocks an over-budget payment and a prompt injection, allows a read-only search, and holds a refund for human approval."></a>
+<a href="https://iamharshdubey.onrender.com"><img src="./assets/banner.svg" width="100%" alt="Harsh Dubey, full-stack and agentic AI engineer. I ship full-stack products, and AI agents that can't go off the rails: a policy gate blocks an over-budget payment and a prompt injection, allows a read-only search, and holds a refund for human approval."></a>
 
 <p align="center">
   <a href="https://iamharshdubey.onrender.com"><img src="https://img.shields.io/badge/Portfolio-iamharshdubey-0b0f14?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
@@ -10,14 +10,25 @@
   <a href="https://huggingface.co/datasets/Harsharhs/ChokeBench"><img src="https://img.shields.io/badge/Dataset-ChokeBench-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="ChokeBench on Hugging Face"></a>
 </p>
 
-### The model proposes. Code decides.
+### Full stack, end to end, with guardrails built in.
 
-I build the layer between an LLM's decision and the real world: deterministic policy gateways, tool-call gating, human approval for the risky actions, and tamper-evident ledgers, shipped as remote **MCP servers** any agent can plug into. Every project below is **live**, tested, and published with its numbers and the caveat next to them.
+I build whole products: the **frontend** people use, the **backend** and database behind it, the **deployment** that keeps it running, and the **guardrails** that stop an AI agent from doing something it shouldn't. Every project below is **live in production**, tested in CI, and published with its numbers and the caveat next to them.
 
-- 🛡️ **Agent safety**: 0 of 240 prompt-injection attacks moved money through SELLABLE's gate
+- 🧱 **Full stack**: 7 apps live today, from Next.js and React frontends to FastAPI and Express backends on PostgreSQL, deployed on Azure and Render
+- 🛡️ **Guardrails**: 0 of 240 prompt-injection attacks moved money through SELLABLE's deterministic gate
 - 🔬 **Research**: first author of *Errors Are Not Choke Points*, selected for the [XERJ Corpus Hub](https://hub.xerj.org/corpus/harshdubey23--early-failure-detection-cot)
 - 🏆 **Winner**, CodeX 3.0 Hack Arena · 2x Smart India Hackathon (college round)
-- 🎓 B.Tech CSE (AI & ML), KIET Group of Institutions, 2028 · open to **agentic AI / LLM internships**
+- 🎓 B.Tech CSE (AI & ML), KIET Group of Institutions, 2028 · open to **full-stack, AI and LLM engineering internships**
+
+## What I do end to end
+
+| Layer | What I build | Where you can see it |
+| --- | --- | --- |
+| 🎨 **Frontend** | Next.js 15 and React apps with 3D maps (MapLibre, deck.gl), a voice-driven UI, and ML that runs in the browser (ONNX, MediaPipe WASM) | [StrataIQ](https://strataiq-app.centralindia.cloudapp.azure.com/) · [ProctorIQ](https://proctoriq-exam.onrender.com) · [Abhed](https://abhed.onrender.com) |
+| ⚙️ **Backend** | FastAPI and Express services, REST APIs, JWT auth, crash-safe payment state machines, PostgreSQL/PostGIS, Supabase, SQLite, MongoDB | [SELLABLE](https://github.com/HarshDubey23/SELLABLE) · [StrataIQ](https://github.com/HarshDubey23/StratIq) · [ExpenseTracker](https://github.com/HarshDubey23/expensetracker) |
+| 🚀 **Deployment & ops** | Docker Compose on an Azure Ubuntu VM behind Caddy (automatic HTTPS, security headers, zero-error restarts), Render services, GitHub Actions CI, end-to-end and live smoke tests, database backups, load tests | [StrataIQ on Azure](https://strataiq-app.centralindia.cloudapp.azure.com/) · [SELLABLE CI](https://github.com/HarshDubey23/SELLABLE/actions) |
+| 🛡️ **Guardrails** | Deterministic policy gates for agent tool calls, prompt-injection defence, human approval bound to a hash of the exact action, signed tamper-evident ledgers | [SELLABLE](https://sellable-mcp.onrender.com) · [Abhed](https://abhed.onrender.com) |
+| 🤖 **AI & agents** | Remote MCP servers, tool calling, voice agents, RAG, LLM evaluation, where the LLM proposes and tested code decides | [SELLABLE MCP](https://sellable-mcp.onrender.com) · [Research](https://github.com/HarshDubey23/early-failure-detection-cot) |
 
 ## Featured work
 
@@ -81,6 +92,8 @@ I build the layer between an LLM's decision and the real world: deterministic po
 | **Fraud scoring API** | XGBoost on a leakage-safe temporal split: PR-AUC 0.793 on unseen future transactions, and an honest note that it doesn't beat logistic regression | [Live API](https://fraud-scoring-api-jl0v.onrender.com/docs) · [Code](https://github.com/HarshDubey23/Credit-Card-Fraud-Detection) |
 | **abhed-mcp** | Zero-dependency MCP server that puts any agent's tool calls behind Abhed's gate | [Code](https://github.com/HarshDubey23/abhed-mcp) |
 | **RAG pipeline** | Medical document RAG with hybrid search, reranking and page-level citations | [Code](https://github.com/HarshDubey23/Rag_Pipeline) |
+| **ExpenseTracker** | React 19 + Express 5 + MongoDB finance tracker with JWT auth, bcrypt, Helmet and user-scoped CRUD | [Code](https://github.com/HarshDubey23/expensetracker) |
+| **DarshanEase** | React + Express + MongoDB temple booking platform with user, organiser and admin flows | [Code](https://github.com/HarshDubey23/DarshanEase) |
 | **NLP labs** | Self-attention, tokenisation and transformer fine-tuning from scratch | [Code](https://github.com/HarshDubey23/nlp_labs) |
 | **Deep learning essentials** | CNNs, RNNs, backprop and optimisers implemented in PyTorch | [Code](https://github.com/HarshDubey23/Deep_Learning_Essential) |
 
@@ -100,10 +113,13 @@ I build the layer between an LLM's decision and the real world: deterministic po
 ## Toolbox
 
 <p>
-  <img src="https://skillicons.dev/icons?i=py,ts,pytorch,sklearn,opencv,fastapi,nextjs,react,postgres,supabase,sqlite,docker,githubactions,azure,aws&perline=15" alt="Python, TypeScript, PyTorch, scikit-learn, OpenCV, FastAPI, Next.js, React, PostgreSQL, Supabase, SQLite, Docker, GitHub Actions, Azure, AWS">
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,nodejs,express,py,fastapi,postgres,supabase,mongodb,sqlite,docker,githubactions,azure,aws,linux,pytorch,sklearn&perline=10" alt="TypeScript, JavaScript, React, Next.js, Tailwind, Node.js, Express, Python, FastAPI, PostgreSQL, Supabase, MongoDB, SQLite, Docker, GitHub Actions, Azure, AWS, Linux, PyTorch, scikit-learn">
 </p>
 
-**Agents:** MCP servers · tool calling · guardrails · prompt-injection defence · human-in-the-loop approval · OpenAI / Gemini / Groq APIs  
+**Frontend:** Next.js · React · TypeScript · Tailwind · MapLibre / deck.gl · ONNX Runtime Web  
+**Backend:** FastAPI · Express · REST · JWT auth · PostgreSQL / PostGIS · Supabase · MongoDB  
+**Deploy:** Docker · Caddy · Azure VM · Render · GitHub Actions · Playwright end-to-end tests  
+**Guardrails & agents:** MCP servers · tool calling · guardrails · prompt-injection defence · human-in-the-loop approval · OpenAI / Gemini / Groq APIs  
 **ML:** PyTorch · XGBoost · ONNX · MediaPipe · process reward models · calibration · bootstrap CIs · adversarial red-teaming
 
 ## Recognition
@@ -118,4 +134,4 @@ I build the layer between an LLM's decision and the real world: deterministic po
   <img src="https://raw.githubusercontent.com/HarshDubey23/HarshDubey23/output/snake-light.svg" width="100%" alt="My contribution graph for the last year, eaten by a snake.">
 </picture>
 
-<p align="center"><b>Hiring for an agentic AI, LLM or ML internship?</b> <a href="mailto:harshimp123455@gmail.com">harshimp123455@gmail.com</a> · <a href="https://www.linkedin.com/in/harsh-dubey-224b08328">LinkedIn</a> · <a href="https://iamharshdubey.onrender.com">Portfolio</a></p>
+<p align="center"><b>Hiring a full-stack or AI engineer intern?</b> <a href="mailto:harshimp123455@gmail.com">harshimp123455@gmail.com</a> · <a href="https://www.linkedin.com/in/harsh-dubey-224b08328">LinkedIn</a> · <a href="https://iamharshdubey.onrender.com">Portfolio</a></p>
