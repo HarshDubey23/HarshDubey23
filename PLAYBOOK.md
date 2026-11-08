@@ -1,7 +1,7 @@
 # Profile playbook
 
-## Regenerate the README panels
-Edit the copy in `tools/build3.py` and run `python tools/build3.py` (needs `fonttools`; the Bricolage Grotesque and JetBrains Mono fonts are in `tools/fonts`). The hero is `tools/img/meadow.jpg`, a frame rendered from the portfolio's 3D world.
+## Regenerate the banner
+Edit `tools/banner.py` and run `PYTHONUTF8=1 python tools/banner.py` (needs `fonttools`; fonts are in `tools/fonts`). Project screenshots in `assets/shots` are taken from the live apps at 1440x900 and saved as 1200x750 JPEGs.
 The snake refreshes itself twice a day; run **Contribution snake** once from the Actions tab after a colour change.
 
 ## Achievements (7 can still be earned; Arctic Code Vault and Mars 2020 are retired)
