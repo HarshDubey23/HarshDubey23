@@ -14,6 +14,7 @@
 
 I build whole products: the **frontend** people use, the **backend** and database behind it, the **deployment** that keeps it running, and the **guardrails** that stop an AI agent from doing something it shouldn't. Every project below is **live in production**, tested in CI, and published with its numbers and the caveat next to them.
 
+- 🎬 **Developer tools**: [reporeel](https://github.com/HarshDubey23/reporeel) turns any repo into a narrated explainer video and a launch-ready README in one command
 - 🧱 **Full stack**: 7 apps live today, from Next.js and React frontends to FastAPI and Express backends on PostgreSQL, deployed on Azure and Render
 - 🛡️ **Guardrails**: 0 of 240 prompt-injection attacks moved money through SELLABLE's deterministic gate
 - 🔬 **Research**: first author of *Errors Are Not Choke Points*, selected for the [XERJ Corpus Hub](https://hub.xerj.org/corpus/harshdubey23--early-failure-detection-cot)
@@ -33,6 +34,22 @@ I build whole products: the **frontend** people use, the **backend** and databas
 ## Featured work
 
 <table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/HarshDubey23/reporeel"><img src="./assets/shots/reporeel.jpg" alt="reporeel title card: your repo, explained in one command."></a>
+<h3>reporeel</h3>
+<p><b>Your repo, explained in one command.</b> Turns any repository into a narrated video of the live app, the architecture, real code and a real test run, then puts it in the README with a diagram, makes the social card, drafts launch posts, and checks the quickstart actually works. Its own launch video was made by itself.</p>
+<p><code>12 commands</code> <code>free local voice</code> <code>Claude Code skill</code></p>
+<p><a href="https://github.com/HarshDubey23/reporeel"><b>Code and video</b></a> · <a href="https://github.com/HarshDubey23/reporeel/blob/main/docs/reporeel/reporeel.mp4">Watch the launch video</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/HarshDubey23/saakh"><img src="./assets/shots/saakh.jpg" alt="Saakh: prove you're good for it, show nothing."></a>
+<h3>Saakh · zero-knowledge credit</h3>
+<p>A credit model compiled into a <b>zero-knowledge circuit</b>. Your browser proves your credit tier from a bank-signed statement in about a second, and a lending contract on a real EVM learns one letter, not one number. Seven attacks, each one run for real and stopped.</p>
+<p><code>15,219 constraints</code> <code>256-byte proof</code> <code>7 / 7 attacks stopped</code></p>
+<p><a href="https://github.com/HarshDubey23/saakh"><b>Code</b></a> · <a href="https://github.com/HarshDubey23/saakh/blob/main/media/saakh-tour.mp4">Watch the tour</a></p>
+</td>
+</tr>
 <tr>
 <td width="50%" valign="top">
 <a href="https://sellable-mcp.onrender.com"><img src="./assets/shots/sellable.jpg" alt="SELLABLE MCP landing page: give your agent a wallet it can't open."></a>
